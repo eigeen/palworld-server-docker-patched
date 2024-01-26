@@ -16,7 +16,8 @@ if [ "${UPDATE_ON_BOOT}" = true ]; then
     printf "\e[0;32m*****STARTING INSTALL/UPDATE*****\e[0m\n"
     su steam -c '/home/steam/steamcmd/steamcmd.sh +force_install_dir "/palworld" +login anonymous +app_update 2394010 validate +quit'
     # Apply unofficial patch files
-    cp /temp/PalServer-Linux-Test /palworld/Pal/Binaries/Linux/PalServer-Linux-Test
+    printf "\e[0;32m*****PATCHING FILES*****\e[0m\n"
+    ./patch.sh
 fi
 
 term_handler() {

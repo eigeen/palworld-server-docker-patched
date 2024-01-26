@@ -42,6 +42,11 @@ if [ "${MULTITHREADING}" = true ]; then
     STARTCOMMAND="${STARTCOMMAND} -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS"
 fi
 
+if [ "${ALWAYS_PATCH}" = true ]; then
+    printf "\e[0;32m*****PATCHING FILES*****\e[0m\n"
+    /home/steam/server/patch.sh
+fi
+
 cd /palworld || exit
 
 printf "\e[0;32m*****CHECKING FOR EXISTING CONFIG*****\e[0m\n"

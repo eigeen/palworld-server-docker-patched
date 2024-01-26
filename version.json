@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "patch_files": [
+    {
+      "version": "0.1.3",
+      "orig_md5": "647b75edde73dd7d9825523fe8aa0f3e",
+      "patched_md5": "a3f4d882fc0c0801c581e6c91a80342e",
+      "url": "https://os3.eigeen.com/public-tmp/palworld-server-patch/patch_update_3"
+    },
+    {
+      "version": "0.1.2",
+      "orig_md5": "",
+      "patched_md5": "",
+      "url": ""
+    }
+  ]
+}
