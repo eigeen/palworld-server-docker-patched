@@ -20,4 +20,4 @@ services:
          - COMMUNITY=false  # Enable this if you want your server to show up in the community servers tab, USE WITH SERVER_PASSWORD!
          - SERVER_NAME="World of Pals"
       volumes:
-         - ./palworld-test:/palworld/
+         - ./palworld:/palworld/

@@ -10,7 +10,9 @@ RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget -q https://ghps.cc/https://github.com/itzg/rcon-cli/releases/download/1.6.4/rcon-cli_1.6.4_linux_amd64.tar.gz -O - | tar -xz
-RUN mkdir /temp && wget -q https://ghps.cc/https://github.com/VeroFess/PalWorld-Server-Unoffical-Fix/releases/download/1.3.0-Update-2/PalServer-Linux-Test-Patch-Update-2 -O /temp/PalServer-Linux-Test
+RUN mkdir /temp \
+    && wget -q https://ghps.cc/https://github.com/VeroFess/PalWorld-Server-Unoffical-Fix/releases/download/1.3.0-Update-2/PalServer-Linux-Test-Patch-Update-2 -O /temp/PalServer-Linux-Test \
+    $$ chmod +x /temp/PalServer-Linux-Test
 RUN mv rcon-cli /usr/bin/rcon-cli
 
 ENV PORT= \
